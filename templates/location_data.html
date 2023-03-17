@@ -1,0 +1,344 @@
+{% for location_key, location_value in selected_location_IVR_data.items() %}
+
+<div class="panel panel--loose panel--raised base-margin-bottom base-margin-top">
+        <h2 class="subtitle">Store Information</h2>
+        <div class="section no-padding-bottom">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group base-margin-bottom">
+                        <div class="form-group__text">
+                            <input id="input-state-disabled" type="text" value="{{selected_location_id}}" disabled>
+                            <label for="input-state-default">Store ID</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group base-margin-bottom">
+                        <div class="form-group__text">
+                            <input id="input-state-disabled" type="text" value="{{location_value.Company}}" disabled>
+                            <label for="input-state-default">Company</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-xl-3">
+                    <div class="form-group base-margin-bottom">
+                        <div class="form-group__text">
+                            <input id="input-state-disabled" type="text" value="{{location_value.Addr}}" disabled>
+                            <label for="input-state-default">Address</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-3">
+                    <div class="form-group base-margin-bottom">
+                        <div class="form-group__text">
+                            <input id="input-state-disabled" type="text" value="{{location_value.City}}" disabled>
+                            <label for="input-state-default">City</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-3">
+                    <div class="form-group base-margin-bottom">
+                        <div class="form-group__text">
+                            <input id="input-state-disabled" type="text" value="{{location_value.ZipCode}}" disabled>
+                            <label for="input-state-default">Zipcode</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-3">
+                    <div class="form-group base-margin-bottom">
+                        <div class="form-group__text">
+                            <input id="input-state-disabled" type="text" value="{{location_value.State}}" disabled>
+                            <label for="input-state-default">State</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="accordion qtr-margin-right qtr-margin-left">
+                <li id="more_info_accordion">
+                    <a class="accordion__title">
+                        <span>More Store Information</span>
+                        <span class="accordion__toggle icon-chevron-down"></span>
+                    </a>
+                    <div class="accordion__content">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-xl-3">
+                                <div class="form-group base-margin-bottom">
+                                    <div class="form-group__text">
+                                        <input id="input-state-disabled" type="text" value="{{location_value.TZ}}" disabled>
+                                        <label for="input-state-default">Timezone</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-xl-3">
+                                <div class="form-group base-margin-bottom">
+                                    <div class="form-group__text">
+                                        <input id="input-state-disabled" type="text" value="{{location_value.FECompany}}" disabled>
+                                        <label for="input-state-default">FE Company</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-3">
+                                <div class="form-group base-margin-bottom">
+                                    <div class="form-group__text">
+                                        <input id="input-state-disabled" type="text" value="{{location_value.FEDivision}}" disabled>
+                                        <label for="input-state-default">FE Division</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-3">
+                                <div class="form-group base-margin-bottom">
+                                    <div class="form-group__text">
+                                        <input id="input-state-disabled" type="text" value="{{location_value.FERegion}}" disabled>
+                                        <label for="input-state-default">FE Region</label>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-sm-12 col-md-6 col-xl-3">
+                                <div class="form-group base-margin-bottom">
+                                    <div class="form-group__text">
+                                        <input id="input-state-disabled" type="text" value="{{location_value.RXCompany}}" disabled>
+                                        <label for="input-state-default">RX Company</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-3">
+                                <div class="form-group base-margin-bottom">
+                                    <div class="form-group__text">
+                                        <input id="input-state-disabled" type="text" value="{{location_value.RXDivision}}" disabled>
+                                        <label for="input-state-default">RX Division</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-3">
+                                <div class="form-group base-margin-bottom">
+                                    <div class="form-group__text">
+                                        <input id="input-state-disabled" type="text" value="{{location_value.RXRegion}}" disabled>
+                                        <label for="input-state-default">RX Region</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+</div>
+</div>
+
+<div class="panel panel--loose panel--raised base-margin-bottom base-margin-top">
+    <form action="/update_emergency_settings/{{location_key}}" method="POST" name="envVars">
+
+    <h2 class="subtitle">Emergency Close</h2>
+
+    <div class="section no-padding-top">
+        <div class="row">
+        <div class="col-sm-12 col-md-3 base-margin-top base-margin-right">
+            <div class="subheader">FE Emergency CLose</div>
+            <div class="btn-group">
+                <button class="btn btn--ghost {% if location_value.FEOnly|string == '1' %} selected disabled {% endif %}" name="emergency_button" value="FEOnly__1" type="submit" name="">On</button>
+                <button class="btn btn--ghost {% if location_value.FEOnly|string == '0'%} selected disabled {% endif %}" name="emergency_button"  value="FEOnly__0">Off</button>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 base-margin-top base-margin-right">
+        <div class="subheader">RX Emergency CLose</div>
+            <div class="btn-group">
+                <button class="btn btn--ghost {% if location_value.RXOnly|string == '1' %} selected disabled {% endif %}" name="emergency_button" value="RXOnly__1">On</button>
+                <button class="btn btn--ghost {% if location_value.RXOnly|string == '0' %} selected disabled {% endif %}" name="emergency_button" value="RXOnly__0">Off</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </form>
+</div>
+
+
+
+<div class="panel panel--loose panel--raised base-margin-bottom base-margin-top">
+    <h2 class="subtitle">Opening Hours</h2>
+
+    <div class="section">
+
+        <div class="responsive-table">
+            <table class="table table--lined custom-table-design table--fixed" aria-label="Compressed table example">
+                <tbody>
+                    <tr>
+                        <td class="td-header" class="text-weight-900">Day</td>
+                        <td class="td-header-secondary">Sunday</td>
+                        <td class="td-header-secondary">Monday</td>
+                        <td class="td-header-secondary">Tuesday</td>
+                        <td class="td-header-secondary">Wednesday</td>
+                        <td class="td-header-secondary">Thursday</td>
+                        <td class="td-header-secondary">Friday</td>
+                        <td class="td-header-secondary">Saturday</td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-header" class="text-weight-900">FE Open</td>
+                        {% for rx_day_key, rx_day_value in location_value.Hours.items() %}
+                        <td>{{rx_day_value.Open}}</td>
+                        {% endfor %}
+                    </tr>
+
+                    <tr>
+                        <td class="td-header" class="text-weight-900">FE Close</td>
+                        {% for rx_day_key, rx_day_value in location_value.Hours.items() %}
+                        <td>{{rx_day_value.Close}}</td>
+                        {% endfor %}
+                    </tr>
+
+                    <tr>
+                        <td class="td-header" class="text-weight-900">RX Open</td>
+                        {% for fe_day_key, fe_day_value in location_value.RXHours.items() %}
+                        <td>{{fe_day_value.Open}}</td>
+                        {% endfor %}
+                    </tr>
+
+                    <tr>
+                        <td class="td-header" class="text-weight-900">RX Close</td>
+                        {% for fe_day_key, fe_day_value in location_value.RXHours.items() %}
+                        <td>{{fe_day_value.Close}}</td>
+                        {% endfor %}
+                    </tr>
+
+                    <tr>
+                        <td class="td-header"></td>
+                        <td ><button class="btn btn--justified btn--ghost"
+                                onclick="openHoursModal('modal-large', 'SUN', 'Sunday', {{location_value}})"> 
+                                Edit Sunday
+                            </button>
+                        </td>
+                        <td ><button class="btn btn--justified btn--ghost"
+                                onclick="openHoursModal('modal-large', 'MON', 'Monday', {{location_value}})">Edit
+                                Monday</button>
+                        </td>
+                        <td ><button class="btn btn--justified btn--ghost"
+                                onclick="openHoursModal('modal-large', 'TUE', 'Tuesday', {{location_value}})">Edit
+                                Tuesday</button>
+                        </td>
+                        <td ><button class="btn btn--justified btn--ghost"
+                                onclick="openHoursModal('modal-large', 'WED', 'Wednesday', {{location_value}})">Edit
+                                Wednesday</button>
+                        </td>
+                        <td ><button class="btn btn--justified btn--ghost"
+                                onclick="openHoursModal('modal-large', 'THU', 'Thursday', {{location_value}})">Edit
+                                Thursday</button>
+                        </td>
+                        <td ><button class="btn btn--justified btn--ghost"
+                                onclick="openHoursModal('modal-large', 'FRI', 'Friday', {{location_value}})">Edit
+                                Friday</button>
+                        </td>
+                        <td ><button class="btn btn--justified btn--ghost"
+                                onclick="openHoursModal('modal-large', 'SAT', 'Saturday', {{location_value}})">Edit
+                                Saturday</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="modal modal--large hide" id="modal-large">
+    <div class="modal__dialog">
+        <form action="/hours_update/{{location_key}}"" method="POST" name="envVars">
+
+            <div class="modal__content">
+                <a class="modal__close" onclick="closeModal('modal-large')"><span class="icon-close"></span></a>
+                <div class="modal__header">
+                    <div class="modal__title">Edit Opening Hours - <span id="day_string">Sunday</span></div>
+                </div>
+                <div class="modal__body">
+
+                    <input id="day_abb" name="day_abb" type="text" hidden value="">
+
+                    <div class="row base-margin-top">
+                        <div class="col-md-6">
+                            <div class="form-group base-margin-bottom">
+                                <div class="form-group__text">
+                                    <input id="fe_open" name="fe_open" type="text">
+                                    <label for="fe_open">FE Open</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group base-margin-bottom">
+                                <div class="form-group__text">
+                                    <input id="fe_close" name="fe_close" type="text">
+                                    <label for="fe_open">FE Close</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group base-margin-bottom">
+                                <div class="form-group__text">
+                                    <input id="rx_open" name="rx_open" type="text">
+                                    <label for="rx_open">RX Open</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group base-margin-bottom">
+                                <div class="form-group__text">
+                                    <input id="rx_close" name="rx_close" type="text">
+                                    <label for="rx_close">RX Close</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal__footer">
+                    <button type="submit" class="btn" onclick="closeModal('modal-large')">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    /*Inverts Table - rows to columns for better readablility of result*/
+    .cui .table td:first-child,
+    .cui .table th:first-child {
+        width: auto;
+    }
+
+    table {
+        display: table;
+    }
+
+    table tr {
+        display: table-cell;
+    }
+
+    table tr td {
+        display: block;
+    }
+</style>
+<script>
+   
+//Toogle for store details
+/*var show_more_store_info = document.getElementsByClassName("more_info")[0];
+
+show_more_store_info.onclick = function(event) {
+
+    if (event.classList.contains("active")){
+        event.classList.remove("active");
+    } else {
+        event.classList.add("active");
+    }
+}*/
+</script>
+{% endfor %}

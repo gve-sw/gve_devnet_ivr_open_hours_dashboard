@@ -1,0 +1,36 @@
+{% extends "masterPage.html" %}
+
+{% block content %}
+
+<div class="row">
+
+    
+    <nav class="col-3 col-xl-3 col-md-4 sidebar dbl-margin-top scrollbar-colored"" role="navigation">
+        {% include "menu.html" %}
+    </nav>
+
+    <div class="col-9 col-xl-9 col-md-8">
+
+        {% include "alert.html" %}
+
+        <div id="location_content">
+
+            <!--Content will be automatically added when an menu element is selected-->
+            <div class="section">Please select a store from the list of stores on the left.</div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+
+    {% if selected_location_id %}
+        updateLocationContent('{{selected_location_id}}');
+        highlightSelectedMenuListElement('{{selected_location_id }}');
+    {% endif %}
+
+    sortMenuAlphabetical("rootSidebar");
+
+</script>
+
+{% endblock %}

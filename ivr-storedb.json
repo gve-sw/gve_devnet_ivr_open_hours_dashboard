@@ -1,0 +1,236 @@
+﻿[
+    {
+        "00001": {
+            "Addr": "Hansaallee 249",
+            "City": "Duesseldorf",
+            "State": "NRW",
+            "ZipCode": "40549",
+            "TZ": "Germany/Berlin",
+            "FECompany": "00001",
+            "FEDivision": "00001",
+            "FERegion": "00001",
+            "RXCompany": "00001",
+            "RXDivision": "00001",
+            "RXRegion": "00001",
+            "Company": "Cisco",
+            "FEOnly": "0",
+            "RXOnly": "0",
+            "Hours": {
+                "SUN": {
+                    "Open": "0900",
+                    "Close": "2000"
+                },
+                "MON": {
+                    "Open": "0800",
+                    "Close": "2200"
+                },
+                "TUE": {
+                    "Open": "0800",
+                    "Close": "2200"
+                },
+                "WED": {
+                    "Open": "0800",
+                    "Close": "2200"
+                },
+                "THU": {
+                    "Open": "0800",
+                    "Close": "2200"
+                },
+                "FRI": {
+                    "Open": "0800",
+                    "Close": "2200"
+                },
+                "SAT": {
+                    "Open": "0800",
+                    "Close": "2200"
+                }
+            },
+            "RXHours": {
+                "SUN": {
+                    "Open": "0900",
+                    "Close": "1700"
+                },
+                "MON": {
+                    "Open": "0800",
+                    "Close": "2200"
+                },
+                "TUE": {
+                    "Open": "0800",
+                    "Close": "2200"
+                },
+                "WED": {
+                    "Open": "0800",
+                    "Close": "2200"
+                },
+                "THU": {
+                    "Open": "0800",
+                    "Close": "2200"
+                },
+                "FRI": {
+                    "Open": "0800",
+                    "Close": "2200"
+                },
+                "SAT": {
+                    "Open": "0900",
+                    "Close": "1800"
+                }
+            }
+        }
+    },
+    {
+        "00002": {
+            "Addr": "1 Pennsylvania Plaza",
+            "City": "New York",
+            "State": "NJ",
+            "ZipCode": "10119",
+            "TZ": "America/New_York",
+            "FECompany": "00002",
+            "FEDivision": "00002",
+            "FERegion": "00002",
+            "RXCompany": "00002",
+            "RXDivision": "00002",
+            "RXRegion": "00002",
+            "Company": "Cisco",
+            "FEOnly": "0",
+            "RXOnly": "1",
+            "Hours": {
+                "SUN": {
+                    "Open": "0001",
+                    "Close": "2400"
+                },
+                "MON": {
+                    "Open": "0001",
+                    "Close": "2400"
+                },
+                "TUE": {
+                    "Open": "0001",
+                    "Close": "2400"
+                },
+                "WED": {
+                    "Open": "0001",
+                    "Close": "2400"
+                },
+                "THU": {
+                    "Open": "0001",
+                    "Close": "2400"
+                },
+                "FRI": {
+                    "Open": "0001",
+                    "Close": "2400"
+                },
+                "SAT": {
+                    "Open": "0001",
+                    "Close": "2400"
+                }
+            },
+            "RXHours": {
+                "SUN": {
+                    "Open": "1000",
+                    "Close": "1800"
+                },
+                "MON": {
+                    "Open": "0800",
+                    "Close": "2200"
+                },
+                "TUE": {
+                    "Open": "0800",
+                    "Close": "2200"
+                },
+                "WED": {
+                    "Open": "0800",
+                    "Close": "2200"
+                },
+                "THU": {
+                    "Open": "0800",
+                    "Close": "2200"
+                },
+                "FRI": {
+                    "Open": "0800",
+                    "Close": "2200"
+                },
+                "SAT": {
+                    "Open": "0900",
+                    "Close": "1800"
+                }
+            }
+        }
+    },
+    {
+        "00003": {
+            "Addr": "11 Rue Camille Desmoulins",
+            "City": "Issy-les-Moulineaux",
+            "State": "IDF",
+            "ZipCode": "92130",
+            "TZ": "France/Paris",
+            "FECompany": "00003",
+            "FEDivision": "00003",
+            "FERegion": "00003",
+            "RXCompany": "00003",
+            "RXDivision": "00003",
+            "RXRegion": "00003",
+            "Company": "Cisco",
+            "FEOnly": "1",
+            "RXOnly": "0",
+            "Hours": {
+                "SUN": {
+                    "Open": "0800",
+                    "Close": "2100"
+                },
+                "MON": {
+                    "Open": "0800",
+                    "Close": "2100"
+                },
+                "TUE": {
+                    "Open": "0800",
+                    "Close": "2100"
+                },
+                "WED": {
+                    "Open": "0800",
+                    "Close": "2100"
+                },
+                "THU": {
+                    "Open": "0800",
+                    "Close": "2100"
+                },
+                "FRI": {
+                    "Open": "0800",
+                    "Close": "2100"
+                },
+                "SAT": {
+                    "Open": "0801",
+                    "Close": "2100"
+                }
+            },
+            "RXHours": {
+                "SUN": {
+                    "Open": "1000",
+                    "Close": "1800"
+                },
+                "MON": {
+                    "Open": "0900",
+                    "Close": "2100"
+                },
+                "TUE": {
+                    "Open": "0900",
+                    "Close": "2100"
+                },
+                "WED": {
+                    "Open": "0900",
+                    "Close": "2100"
+                },
+                "THU": {
+                    "Open": "0900",
+                    "Close": "2100"
+                },
+                "FRI": {
+                    "Open": "0900",
+                    "Close": "2100"
+                },
+                "SAT": {
+                    "Open": "0900",
+                    "Close": "1700"
+                }
+            }
+        }
+    }
+]

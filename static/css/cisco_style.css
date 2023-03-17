@@ -1,0 +1,154 @@
+        
+/*Masterpage*/
+    #footer-link-meraki{
+        height: 15px;
+    }
+    #footer-link-gve-devnet{
+        height: 30px;
+        bottom: 4px;
+        position: relative;
+    }
+    #time_location_note{
+        color: var(--cui-color-gray-500);
+        padding-top: 5px;
+        text-align: center;
+        font-size: var(--cui-font-size-sm);
+    }
+
+    body.cui footer, body.cui .footer{
+        margin-top: 0;
+    }
+
+
+    /*Header*/
+    #header-logo{
+        height: 35px;
+        margin-left: 5px;
+        background-image: url(https://www.cisco.com/web/fw/i/logo-open-graph.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 46px;
+        margin-bottom: 10px;
+
+        
+    }
+
+
+/*Login*/  
+    .required-label{
+        color: var(--cui-form-label-color);
+    }    
+    #customer-logo{
+        height:55px;
+        margin-bottom: 10px;
+    }
+
+#customer-logo{
+    height: 49px;
+    background-image: url(/static/images/Logo_long_blue.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 233px;
+}
+
+/*Left Menu*/
+.cui .sidebar{
+    padding-top: 18px;
+}
+
+
+/*list groups*/
+.list-group{
+    padding-left: 0 !important;
+}
+
+.list-group-item{
+    list-style-type: none;
+}
+
+#meraki_api h3{
+    margin-top: 20px;
+}
+
+.list-group-item .btn--link{
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+}
+
+
+/*table*/
+.cui .responsive-table{
+    width: 100%;
+}
+.cui .responsive-table .btn{
+ line-height: 1.8rem;
+}
+
+.cui .table.table--fixed tr{
+    padding:0;
+}
+
+
+.responsive-table .custom-table-design .td-header{
+    font-weight: 900 !important;
+    padding: 8px !important;
+    background-color: var(--cui-color-gray-200) !important;
+}
+
+.responsive-table .custom-table-design .td-header-secondary{
+    font-weight: 900 !important;
+    
+    background-color: var(--cui-color-gray-200) !important;
+}
+
+.responsive-table .custom-table-design{
+    background-color: var(--white-background-color);
+}
+
+.responsive-table .custom-table-design .btn.btn--justified{
+    padding: 2px;
+    margin: -2px;
+    width: 130px;
+}
+
+/*Header*/
+
+.header .tabs>li>a{
+    padding: 17px 0 13px 0;
+}
+
+/*Location*/
+.cui .table td{
+    height:35px;
+}
+
+
+
+/*Logs*/
+
+div#logs{
+    border-top: 1px solid var(--cui-border-color);
+}
+
+.log-entry{
+    border-bottom: 1px solid var(--cui-border-color);
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+}
+
+/*Menu*/
+#filter_keyword_input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+#filter_keyword_input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+#filter_keyword_input::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+

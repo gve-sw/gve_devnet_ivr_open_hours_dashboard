@@ -1,0 +1,10 @@
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<div id="alert-box" class="alert {% if " success" in messages[0] %} alert--success {% elif "error" or "problem" in messages[0]%}
+    alert--danger {%else%} alert--info {% endif %}" role="alert">
+    <div class="alert__message">
+        {{ messages[0] }}
+    </div>
+</div>
+{% endif %}
+{% endwith %}

@@ -1,0 +1,22 @@
+{% extends "masterPage.html" %}
+
+{% block content %}
+
+<div class="panel panel--loose panel--raised base-margin-bottom base-margin-top">
+
+    <h2 class="subtitle">Logs</h2>
+
+    <div id="logs" class="base-margin-top">
+        {% for log in logs|reverse %}
+
+        <span class="log-entry">{{log}}</span>
+
+        {% endfor %}
+    </div>
+</div>
+</div>
+
+<script>
+
+</script>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "masterPage.html" %}
+
+{% block content %}
+<div class="row">
+
+    <div class="col-xl-4 col-md-3">
+    </div>
+
+    <div class="col-xl-4 col-md-6">
+        <div class="section">
+            <div class="panel panel--loose panel--raised base-margin-bottom">
+
+                        <div class="flex flex-center" style="margin-bottom:20px;">
+                            <div id="customer-logo"></div>
+                            
+                        </div>
+                        <div id="login_url" class="flex flex-center">
+                            <a href='{{ auth_uri }}'><input onclick="showLoadingText()" onload="showOriginalText('Sign In with Microsoft Account')"
+                                class="btn btn-primary" value="Sign In with Microsoft"></a>
+                        </div>
+
+                     
+                    </div>
+
+                {% include "alert.html" %}
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-4 col-md-3">
+    </div>
+    
+</div>
+{% endblock %}

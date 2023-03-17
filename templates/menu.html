@@ -1,0 +1,22 @@
+<div id="filter_keyword_input_area" class="form-group base-padding">
+    <div class="form-group__text">
+        <input id="filter_keyword_input" class="text-white" type="text" type="text" onkeyup="filterMenuList()"
+            placeholder="Filter by Store " title="Search store">
+    </div>
+</div>
+<ul id="rootSidebar">
+
+    {% for location in ivr_data %}
+    {% for location_key, location_value in location.items() %}
+
+    <li class="sidebar__item">
+        <a onclick="updateLocationContent('{{location_key}}')" tabindex="0" title="{{location_key}}">
+            <span class="store_location">{{location_value.State}}, {{location_value.City}}, {{location_value.Addr}}
+                ({{location_key}})</span>
+        </a>
+    </li>
+
+    {% endfor %}
+    {% endfor %}
+
+</ul>
